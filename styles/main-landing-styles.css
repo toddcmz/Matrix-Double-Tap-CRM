@@ -1,0 +1,105 @@
+.article-container{
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        ". text-row1 ."
+        ". icons-row2 ."
+        ". credit-row3 ."
+        ". lower-text-row4 ."
+        ". info-row5 ."
+        ". info-row6 ."
+    ;
+}
+
+.top-text{
+    grid-area: text-row1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aqua;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+.top-squares{
+    grid-area: icons-row2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+    background-color: aquamarine;
+}
+
+.credit-card-box{
+    grid-area: credit-row3;
+    display: flex;
+    border: rgb(227, 226, 223) solid 1px;
+    border-radius: 15px;
+    margin: 32px 0 32px 0;
+    height: 36vw;
+}
+
+.bottom-text{
+    grid-area: lower-text-row4;
+}
+
+.bottom-info-1{
+    grid-area: info-row5;
+    display: flex;
+}
+
+.bottom-info-2{
+    grid-area: info-row6;
+}
+
+.upper-icons{
+    border: 2px solid red;
+}
+
+.email-icon{
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.email.circle{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+
+.email-computer{
+    position: absolute;
+    top: 60px;
+    left: 47px;
+}
+
+.blue-credit-card-box{
+    display: flex;
+    background-color: rgb(34, 93, 255);
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    flex-direction: column;
+}
+
+.credit-card-text{
+    color: white;
+    font-family: Arial, Verdana, sans-serif;
+    
+}
+
+.credit-card-image{
+    display: flex;
+    margin-top: 125px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 125px;
+
+}
+
+.creditcard-image{
+    max-width: 500px;
+    max-height: auto;
+}
