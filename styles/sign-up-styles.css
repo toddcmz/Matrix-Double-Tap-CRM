@@ -1,0 +1,93 @@
+.container{
+    justify-items: center;
+    display:grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "side-1 image"
+    "side-2 image"
+    "side-3 image"
+    "side-4 image"
+    "side-5 image"
+    "side-6 image";
+}
+
+.main-image{
+    grid-area: image;
+    width: 60vw;
+    height: 90vh;
+    
+}
+
+.sign-up-header{
+    grid-area:side-1;
+}
+.sign-up-user{
+    grid-area:side-2;
+    
+}
+.sign-up-email{
+    grid-area:side-3;
+    
+}
+.sign-up-pass{
+    grid-area:side-4;
+    
+}
+.sign-up-submit{
+    grid-area:side-5;
+    text-align: center;
+
+
+}
+.sign-up-icons{
+    grid-area:side-6;
+    width: 30vw;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.hero-image{
+    width: 90%;
+    height: 100%;
+}
+.latter{
+    width: 250px;
+    height: 30px;
+    margin: 15px;
+    border-radius: 20px;
+    border: rgb(162, 149, 149) 1px solid;
+}
+.actual-text{
+    font-size: 30px;
+    font-family:  Arial, Helvetica, sans-serif;
+}
+p.Sign up {
+    border-radius: 12px;
+    border-color: blue;
+    padding: 5px;
+}
+.google-icon {
+    height: 40px;
+    width: 40px;
+}
+.twitter-icon {
+    height: 40px;
+    width: 40px;
+}
+.facebook-icon {
+    height: 40px;
+    width: 40px;
+}
+.in-icon {
+    height: 40px;
+    width: 40px;
+}
+.submit-button {
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    border-radius: 15px;
+}
