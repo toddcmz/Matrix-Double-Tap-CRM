@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav-bar-main-container{
+    height: 60px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo{
+    padding: 10px;
+}
+
+.central-nav-button{
+    border: none;
+    background-color: white;
+    padding: 15px;
+}
+
+.central-nav-button:hover{
+    border: 1px solid rgb(170, 168, 168);
+    color: rgb(30, 30, 173);
+    border-radius: 10px;
+}
+
+.nav-sign-try-container{
+    padding: 20px;
+}
+
+.nav-signin{
+    margin-right: 10px;
+    background-color: white;
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 5px;
+    width: 60px;
+    height: 30px;
+}
+
+.nav-signin:hover{
+    background-color: rgb(230, 225, 225);
+}
+
+.nav-tryit{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.nav-tryit:hover{
+    background-color: rgb(72, 72, 248);
+}
+
+.big-repeat-grid-container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". big-area .";
+}
+
+.main-flex-content{
+    grid-area: big-area;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-text-section{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    justify-content: space-around;
+}
+
+.big-image-section{
+    width: 45%;
+    height: 100%;
+}
+
+.big-image-section-actual-image{
+    width: 100%;
+    height: 100%;
+}
+
+.main-signup-button{
+    height: 45px;
+    width: 35%;
+    background-color: blue;
+    color: white;
+    margin-right: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.main-signup-button:hover{
+    background-color: rgb(49, 49, 112);
+}
+
+.main-chat-button{
+    height: 45px;
+    width: 35%;
+    background-color: white;
+    color: blue;
+    border: 1px blue solid;
+    border-radius: 10px;
+}
+
+.main-chat-button:hover{
+    background-color: rgb(228, 223, 223);
+    color: navy;
+    border: black 1px solid;
+}
+
+.little-dot-list{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    justify-content: flex-start;
+}
+
+.dot-list-item{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.dot-list-pic{
+    height: 10px;
+    width: 10px;
+}
+
+hr{
+    width: 50vw;
+    margin: 30px 25% 30px 25%;
+    border: 1px solid rgb(201, 194, 194);
+}
+
+.how-it-works-container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". how-works-content1 ."
+    ". how-works-content2 ."
+    ". how-works-content3 ."
+    ". how-works-content4 .";
+}
+
+.row1-text1-container{
+    grid-area: how-works-content1;
+    text-align: center;
+    margin: 0 25% 0 25%;
+}
+
+.row2-image1-container{
+    grid-area: how-works-content2;
+    display: flex;
+    flex-direction: row;
+    border: rgb(223, 220, 220) 1px solid;
+    border-radius: 15px;
+    margin: 30px 0 30px 0;
+    height: 35vw;
+}
+
+.row3-text2-container{
+    grid-area: how-works-content3;
+    text-align: center;
+    margin: 40px 25% 40px 25%;
+}
+
+.row4-image2-container{
+    grid-area: how-works-content4;
+    display: flex;
+    flex-direction: row;
+    border: rgb(223, 220, 220) 1px solid;
+    border-radius: 15px;
+    margin: 30px 0 30px 0;
+    height: 35vw;
+}
+
+.row2-left-image-subcontainer{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row2-actual-image{
+    width: 100%;
+    height: 70%;
+}
+
+.row2-text-container{
+    width: 60%;
+    background-color: blue;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    padding: 50px 30px 30px 30px;
+}
+
+.row4-left-image-subcontainer{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row4-actual-image{
+    width: 90%;
+    height: 90%;
+    padding-left: 10px;
+}
+
+.row4-text-container{
+    width: 60%;
+    background-color: blue;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    padding: 50px 30px 30px 30px;
+}
+
+.blue-footer-container{
+    height: 30vw;
+    background-color: blue;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 3fr 5fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". footer-content .";
+}
+
+.footer-content-subcontainer{
+    grid-area: footer-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 30px 0 30px 0;
+}
+
+.footer-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.foot-button-get-started{
+    background-color: limegreen;
+    border: none;
+    border-radius: 5px;
+    width: 40%;
+    height: 30px;
+    color: white;
+}
+
+.foot-button-chat{
+    background-color: white;
+    color: blue;
+    border: none;
+    border-radius: 5px;
+    width: 40%;
+    height: 30px;
+}
+
+.foot-button-get-started:hover{
+    border: 1px gray solid;
+    background-color: rgb(107, 209, 107);
+    color: gray;
+}
+
+.foot-button-chat:hover{
+    border: 1px gray solid;
+    background-color: rgb(231, 226, 226);
+    color: black;
+}
+
+@media screen and (max-width: 850px){
+    .central-nav-button{
+        display: none;
+    }
+    .big-image-section{
+        display: none;
+    }
+    .flex-text-section{
+        width: 80vw;
+    }
+    .main-buttons{
+        margin: 20px;
+    }
+    .row2-left-image-subcontainer{
+        display:none;
+    }
+
+    .row2-image1-container{
+        height: 280px;
+    }
+
+    .row2-text-container{
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .row4-left-image-subcontainer{
+        display: none;
+    }
+
+    .row4-image2-container{
+        height: 340px;
+    }
+
+    .row4-text-container{
+        width: 100%;
+        border-radius: 15px;
+    }
+    
+    .blue-footer-container{
+        height: 300px;
+    }
+}
