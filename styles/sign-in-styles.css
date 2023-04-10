@@ -1,0 +1,167 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1.5px;
+}
+
+body{
+    background: url(../sign-up-images/tlcBack.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+h3{
+    margin: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.main-container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "sign-in-images sign-in-text";
+    height: 95vh;
+    width: 95vw;
+}
+
+.main-subcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.sign-in-images-container{
+    grid-area: sign-in-images;
+    align-items: center;
+}
+
+.left-text-container{
+    grid-area: sign-in-text;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign-up-button{
+    height: 40px;
+    width: 200px;
+    background-color: blue;
+    border-radius: 30px;
+    border: none;
+    margin-top: 10px;
+    box-shadow: 6px 6px 10px rgb(133, 133, 236);
+    font-size: 20px;
+}
+
+.sign-up-button:hover{
+    background-color: rgb(133, 133, 236);
+}
+
+.left-logo-container{
+    height: 25%;
+    width: 70%;
+    margin-top: 20px;
+}
+
+.left-middle-container{
+    width: 80%;
+    height: 85%;
+}
+
+.left-logo{
+    width: 100%;
+    background-color: rgba(248, 244, 244, 0.25);
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 6px 6px 10px rgb(133, 133, 236);
+}
+
+.left-logo:hover{
+    border: 2px solid black;
+    background-color: white;
+    box-shadow: 6px 6px 10px blue;
+}
+
+.left-middle-image{
+    width: 100%;
+}
+
+.right-header-container{
+    color: white;
+    border:  double white;
+    padding: 2px 20px 2px 20px;
+}
+
+.right-icons-container{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.large-icon{
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    box-shadow: 6px 6px 10px blue;
+}
+
+.sign-in-button-container{
+    text-align: center;
+}
+
+.sign-in-button{
+    height: 40px;
+    width: 170px;
+    margin-bottom: 60px;
+    background-color: white;
+    border: none;
+    color: blue;
+    border-radius: 20px;
+    font-size: 20px;
+    box-shadow: 6px 6px 10px blue;
+}
+
+.sign-in-button:hover{
+    background-color: blue;
+    color: white;
+}
+
+.right-entry-container{
+    width: 80%;
+    text-align: center;
+}
+
+.input-field{
+    height: 35px;
+    width: 80%;
+    margin: 20px;
+    border: none;
+    border-radius: 8px;
+}
+
+.user-field{
+    background-image: url(../sign-up-images/tlcUserIcon.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: left;
+    background-position-x: 5px;
+}
+
+.pass-field{
+    background-image: url(../sign-up-images/tlcPassIcon.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: left;
+    background-position-x: 4px;
+}
+
+.input-field:focus{
+    background-image: none;
+}
