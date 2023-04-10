@@ -16,6 +16,9 @@
     background-color: white;
     padding: 15px;
 }
+a{
+    text-decoration: none;
+}
 
 .central-nav-button:hover{
     border: 1px solid rgb(170, 168, 168);
