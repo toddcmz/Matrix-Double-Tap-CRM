@@ -183,6 +183,8 @@ hr{
 
 .bottom-text{
     grid-area: lower-text-row4;
+    display: flex;
+    justify-content: center;
 }
 
 .bottom-info-1{
@@ -190,6 +192,7 @@ hr{
     display: flex;
     justify-content: center;
     gap: 200px;
+    margin-left: 10%;
 }
 
 .bottom-info-2{
@@ -197,6 +200,8 @@ hr{
     display: flex;
     justify-content: center;
     gap: 200px;
+    margin-left: 10%;
+    margin-top: 10%;
 }
 
 .upper-icons{
@@ -208,8 +213,8 @@ hr{
 .email-info{
     display: flex;
     flex-direction: column;
-    
 }
+
 
 .email-icon{
     display: flex;
@@ -265,9 +270,34 @@ hr{
     background-color: blue;
     color: white;
     margin-right: 10px;
-    border: 2px white solid;
+    border: 1px white solid;
     border-radius: 10px;
     margin-left: 50px;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.credit-card-button:hover{
+    background-color: white;
+    color: blue;
+    border-color: blue;
+}
+
+.bot-butt{
+    display: flex;
+    justify-content: center;
+    height: 35px;
+    width: 40%;
+    background-color: white;
+    color: black;
+    margin-right: 10px;
+    border: 2px black solid;
+    border-radius: 10px;
+    margin-left: 50px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bot-butt:hover{
+    background-color: blue;
 }
 
 .credit-card-text{
@@ -380,8 +410,9 @@ hr{
     flex-direction: column;
     height: auto;
     gap: 10px;
-    
-    
+}
+.upper-icons:hover{
+    background-color: blue;
 }
 
 .top-square-image1{
@@ -491,11 +522,46 @@ hr{
     background-color: rgb(231, 226, 226);
     color: black;
 }
+.end-text{
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+   
+}
+.scrap{
+    display: flex;
+    flex-direction: row;
+    
+}
 
 
 
 
 
-@media screen and (max-width: 850px){
 
+@media screen and (max-width: 1100px){
+    .central-nav-button{
+        display: none;
+    }
+    .big-image-section{
+        display: none;
+    }
+    .flex-text-section{
+        width: 80vw;
+    }
+    .main-buttons{
+        margin: 20px;
+    }
+    .bot-butt{
+        display: none;
+    }
+    .credit-card-button{
+        display: none;
+    }
+    .credit-card-image{
+        display: none;
+    }
+    .blue-credit-card-box{
+        border-radius: 15px;
+    }
 }
